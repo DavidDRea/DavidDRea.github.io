@@ -57,6 +57,7 @@ h1, h2, p {
 }
 
 .secondary {
+	width: 100%;
 	background-color: rgb(34, 52, 86);
 }
 
