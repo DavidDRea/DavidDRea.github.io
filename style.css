@@ -1,0 +1,65 @@
+==================
+Main Styles
+==================
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+	font-family: 'Rokkitt', serif;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+}
+
+section {
+	border: 2px solid black;
+}
+
+.nav-container {
+	width: 100%;
+	position: fixed;
+	border-bottom: 2px solid rgb(34, 52, 86);
+}
+
+.nav-container ul {
+	padding: 0;
+	display: flex;
+  	justify-content: center;
+}
+
+.nav-container li {
+	display: inline-block;
+	font-size: 1.2em;
+	letter-spacing: .9em; 
+	font-weight: 900;
+	padding: 20px 20px 15px;
+}
+
+.nav-container a{
+	color: rgb(34, 52, 86);
+	text-decoration: none;
+}
+
+.bg-img {
+	background: url(images/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	min-width: 1024px;
+	min-height: 684px;
+	width: 100%;
+	height: auto;
+}
+
+.change-bg-colour {
+	background-color: rgb(34, 52, 86);
+}
+
+.change-bg-colour a {
+	color: rgb(197, 182, 114);
+}
