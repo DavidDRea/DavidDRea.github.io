@@ -18,8 +18,8 @@ body {
 	margin: 0;
 }
 
-section {
-	border: 2px solid black;
+h1, h2, p {
+	color: rgb(197, 182, 114);
 }
 
 .nav-container {
@@ -54,6 +54,10 @@ section {
 	min-height: 684px;
 	width: 100%;
 	height: auto;
+}
+
+.secondary {
+	background-color: rgb(34, 52, 86);
 }
 
 .change-bg-colour {
