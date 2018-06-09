@@ -13,18 +13,28 @@ Main Styles
 	font-family: 'Rokkitt', serif;
 }
 
+html {
+	padding-top: 0;
+}
+
 body {
 	min-height: 100%;
 	margin: 0;
 }
 
 h1, h2, p {
-	color: rgb(197, 182, 114);
+	color: black;
+}
+
+h1 {
+	margin-top: 0;
 }
 
 .nav-container {
+	margin-top: 0;
 	width: 100%;
 	position: fixed;
+	top: 0;
 	border-bottom: 2px solid rgb(34, 52, 86);
 }
 
@@ -50,10 +60,27 @@ h1, h2, p {
 .bg-img {
 	background: url(images/background.jpg) no-repeat center center fixed;
 	background-size: cover;
+	top: 0;
 	min-width: 1024px;
 	min-height: 684px;
 	width: 100%;
 	height: auto;
+}
+
+.typewriter {
+	background-color: rgb(34, 52, 86);
+	height: 300px;
+	width: 500px;
+	position: absolute;
+	bottom: 95px;
+	left: 432px;
+}
+
+.animation1, 
+.animation2 {
+	font-family: 'Courier New', serif;
+	font-size: 3em;
+	color: rgb(197, 182, 114);
 }
 
 .secondary {
@@ -67,4 +94,21 @@ h1, h2, p {
 
 .change-bg-colour a {
 	color: rgb(197, 182, 114);
+}
+
+.language-blurb-container {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(34, 52, 86);
+}
+
+.language-blurb {
+	padding: 5px; 
+	margin-top: 30px;
+	background-color: rgb(197, 182, 114);
+}
+
+.icon-size {
+	font-size: 5em;
+	color: rgb(5, 17, 39);
 }
