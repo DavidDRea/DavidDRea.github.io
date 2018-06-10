@@ -69,6 +69,7 @@ h1 {
 	min-height: 641px;
 	width: auto;
 	height: 100%;
+	padding-bottom: 20%;
 }
 
 .typewriter {
@@ -76,14 +77,14 @@ h1 {
 	height: 35%;
 	width: 25%;
 	position: absolute;
-	bottom: 22%;
+	bottom: 5%;
 	left: 38%;
 }
 
 .animation1, 
 .animation2 {
 	font-family: 'Courier New', serif;
-	font-size: 2.5em;
+	font-size: 3em;
 	text-align: center;
 	color: rgb(197, 182, 114);
 }
