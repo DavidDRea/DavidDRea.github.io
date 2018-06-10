@@ -50,10 +50,10 @@ h1 {
 
 .nav-container li {
 	display: inline-block;
-	font-size: 1.2em;
-	letter-spacing: .9em; 
+	font-size: 2vw;
+	letter-spacing: .9vw; 
 	font-weight: 900;
-	padding: 20px 20px 15px;
+	padding: 1vw 1vw .5vw;
 }
 
 .nav-container a{
