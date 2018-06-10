@@ -20,6 +20,9 @@ html {
 body {
 	min-height: 100%;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(54, 72, 106);
 }
 
 h1, h2, p {
@@ -35,6 +38,7 @@ h1 {
 	width: 100%;
 	position: fixed;
 	top: 0;
+	z-index: 2;
 	border-bottom: 2px solid rgb(34, 52, 86);
 }
 
@@ -58,28 +62,28 @@ h1 {
 }
 
 .bg-img {
-	background: url(images/background.jpg) no-repeat center center fixed;
+	background: url(images/background.jpg) no-repeat center center;
 	background-size: cover;
 	top: 0;
-	min-width: 1024px;
-	min-height: 684px;
-	width: 100%;
-	height: auto;
+	min-width: 960px;
+	min-height: 641px;
+	width: auto;
+	height: 100%;
 }
 
 .typewriter {
 	background-color: rgb(34, 52, 86);
-	height: 300px;
-	width: 500px;
+	height: 35%;
+	width: 25%;
 	position: absolute;
-	bottom: 95px;
-	left: 432px;
+	bottom: 22%;
+	left: 38%;
 }
 
 .animation1, 
 .animation2 {
 	font-family: 'Courier New', serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	text-align: center;
 	color: rgb(197, 182, 114);
 }

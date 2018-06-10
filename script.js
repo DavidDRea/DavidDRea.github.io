@@ -1,6 +1,6 @@
 let timer1 = 0;
 let timer2 = 0;
-const speed = 250;
+const speed = 220;
 const name = "David Rea";
 const job = "Front End Developer"
 
