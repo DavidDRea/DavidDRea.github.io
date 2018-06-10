@@ -24,7 +24,7 @@ const typing = (text, text2) => {
 //Scroll banner colour change function
 const changeNavColours = () => {
 	let bgColourEle = document.querySelector(".nav-container");
-	if (document.body.scrollTop > 265 || document.documentElement.scrollTop > 265) {
+	if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
 		bgColourEle.classList.add("change-bg-colour");
 	} else {
 	bgColourEle.classList.remove("change-bg-colour");
