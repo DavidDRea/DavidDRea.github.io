@@ -143,6 +143,10 @@ nav.navbar {
 		box-shadow: 1px 2px 1px 1px;
 	}
 
+	.nav-container a {
+		font-size: 3.5vw;
+	}
+
 	.bg-img {
 		top: 140px;
 	}
@@ -150,6 +154,10 @@ nav.navbar {
 	.language-blurb-container {
 		position: relative;
 		top: 140px;
+	}
+
+	.language-blurb {
+		width: 70%;
 	}
 
 	.justify-content-center {
