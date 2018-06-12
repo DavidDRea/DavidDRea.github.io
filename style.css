@@ -32,20 +32,20 @@ h1 {
 	margin-top: 0;
 }
 
+nav.navbar {
+	padding: 0;
+}
+
 .nav-container {
 	margin-top: 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 2;
+	padding-bottom: 6px;
 	border-bottom: 2px solid rgb(34, 52, 86);
 }
 
-.nav-container ul {
-	padding: 0;
-	display: flex;
-  	justify-content: center;
-}
 
 .nav-container li {
 	display: inline-block;
@@ -97,15 +97,12 @@ h1 {
 	background-color: rgb(230, 235, 240);
 	border-color: rgb(230, 235, 240);
 	color: rgba(87, 103, 119, .6);
-	box-shadow: 1px 1px 1px 1px;
-}
-
-.change-bg-colour a {
-	/*color: rgb(197, 182, 114);*/
+	box-shadow: 1px 2px 1px 1px;
 }
 
 .language-blurb-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	background-color: rgb(230, 235, 240);
 }
@@ -113,16 +110,15 @@ h1 {
 .language-blurb {
 	padding: 5px; 
 	background-color: rgb(256, 256, 256);
-	width: 25vw;
+	width: 400px;
 	height: auto;
 	margin: 30px 0;
 	border-radius: 25px;
 }
 
 .icon-size {
-	font-size: 6em;
+	font-size: 7vw;
 	float: left;
-	color: rgb(5, 17, 39);
 }
 
 .devicon-html5-plain-wordmark {
@@ -134,6 +130,35 @@ h1 {
 }
 
 .devicon-javascript-plain {
-	color: green;
-	padding-right: 4px;
+	color: rgb(119, 220, 40);
+	padding-right: 8px;
+}
+
+@media screen and (max-width: 960px) {
+	.nav-container {
+		position: absolute;
+		background-color: rgb(230, 235, 240);
+		border-color: rgb(230, 235, 240);
+		color: rgba(87, 103, 119, .6);
+		box-shadow: 1px 2px 1px 1px;
+	}
+
+	.bg-img {
+		top: 140px;
+	}
+
+	.language-blurb-container {
+		position: relative;
+		top: 140px;
+	}
+
+	.justify-content-center {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.justify-content-center li {
+		text-align: center;
+	}
+
 }
