@@ -52,10 +52,17 @@ nav.navbar {
 	padding: 1vw 1vw .5vw;
 }
 
-.nav-container a{
+.nav-container button {
+	font-size: 2vw;
+	letter-spacing: .9vw; 
+	font-weight: 900;
 	color: rgb(34, 52, 86);
 	text-decoration: none;
 }
+
+.nav-container button:focus {
+	outline: none;
+} 
 
 .bg-img {
 	position: relative;
@@ -85,7 +92,7 @@ nav.navbar {
 	color: rgb(197, 182, 114);
 }
 
-.secondary {
+.projects-container {
 	width: 100%;
 	padding: 30px;
 	background-color: rgb(230, 235, 240);

@@ -1,8 +1,21 @@
+// Variables for typing animation
 let timer1 = 0;
 let timer2 = 0;
 const speed = 220;
 const name = "David Rea";
-const job = "Frontend Developer"
+const job = "Frontend Developer";
+
+// Constants for nav button functionality 
+const home = document.querySelector("#home");
+const homeButton = document.querySelector("#home-button");
+
+const projects = document.querySelector("#projects");
+const projectsButton = document.querySelector("#projects-button");
+ 
+
+const scrollToElement = (element) => {
+	element.scrollIntoView({behavior: "smooth"});
+}
 
 // Typing animation function
 const typing = (text, text2) => {
@@ -34,3 +47,5 @@ const changeNavColours = () => {
 
 window.addEventListener("load", typing(name, job));
 window.onscroll = () => changeNavColours();
+projectsButton.onclick = () => scrollToElement(projects);
+homeButton.onclick = () => scrollToElement(home);
