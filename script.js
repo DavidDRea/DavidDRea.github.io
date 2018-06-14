@@ -2,8 +2,9 @@ let timer1 = 0;
 let timer2 = 0;
 const speed = 220;
 const name = "David Rea";
-const job = "Front End Developer"
+const job = "Frontend Developer"
 
+// Typing animation function
 const typing = (text, text2) => {
 	if(timer1 < text.length) {
 		const textNode = document.createTextNode(text.charAt(timer1));
