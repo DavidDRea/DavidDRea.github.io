@@ -43,12 +43,20 @@ nav.navbar {
 	border-bottom: 2px solid rgb(34, 52, 86);
 }
 
+input#menu-button {
+	display: none;
+}
 
-.nav-container li {
-	display: inline-block;
+label {
+	display: none;
 	font-size: 2vw;
 	letter-spacing: .9vw; 
 	font-weight: 900;
+	color: rgb(34, 52, 86);
+}
+
+.nav-container li {
+	display: inline-block;
 	padding: 1vw 1vw .5vw;
 }
 
@@ -86,7 +94,7 @@ nav.navbar {
 
 .animation1, 
 .animation2 {
-	font-family: 'Courier New', serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 4vw;
 	text-align: center;
 	color: rgb(197, 182, 114);
@@ -158,10 +166,7 @@ nav.navbar {
 #projects {
 	padding: 10px;
 	background-color: rgb(256, 256, 256);
-}
-
-.carousel {
-	border-radius: 0 25px; 
+	margin-bottom: 20px;
 }
 
 @media screen and (max-width: 960px) {
@@ -171,11 +176,24 @@ nav.navbar {
 		border-color: rgb(230, 235, 240);
 		color: rgba(87, 103, 119, .6);
 		box-shadow: 1px 2px 1px 1px;
+		text-align: center;
 	}
 
 	.justify-content-center {
 		display: flex;
 		flex-direction: column;	
+		max-height: 0;
+	    overflow: hidden;
+	}
+    
+	label {
+		display: block;
+		padding-top: 15px;
+	}
+	
+	input:checked ~ .justify-content-center {
+		position: static;
+	    max-height: 100%;
 	}
 
 	.justify-content-center button {
@@ -184,13 +202,9 @@ nav.navbar {
 		text-align: center;
 	}
 
-	.bg-img {
-		top: 150px;
-	}
-
 	.language-blurb-container {
 		position: relative;
-		top: 140px;
+		top: 60px;
 	}
 
 	.language-blurb {

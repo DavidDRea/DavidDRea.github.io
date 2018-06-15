@@ -11,7 +11,11 @@ const homeButton = document.querySelector("#home-button");
 
 const projects = document.querySelector("#projects");
 const projectsButton = document.querySelector("#projects-button");
+
+const about = document.querySelector("#about");
+const aboutButton = document.querySelector("#about-button");
  
+const contactButton = document.querySelector("#contact-button");
 
 const scrollToElement = (element) => {
 	element.scrollIntoView({behavior: "smooth"});
@@ -49,3 +53,4 @@ window.addEventListener("load", typing(name, job));
 window.onscroll = () => changeNavColours();
 projectsButton.onclick = () => scrollToElement(projects);
 homeButton.onclick = () => scrollToElement(home);
+aboutButton.onclick = () => scrollToElement(about);
