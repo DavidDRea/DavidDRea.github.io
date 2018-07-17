@@ -67,11 +67,18 @@ label {
 	font-weight: 900;
 	color: rgb(34, 52, 86);
 	text-decoration: none;
+	padding-right: 5px;
+	border-radius: 15px;
 }
 
 .nav-container button:focus {
 	outline: none;
 } 
+
+.nav-container button:hover {
+	color: rgb(256, 256, 256);
+	background-color: rgb(34, 52, 86);
+}
 
 .bg-img {
 	position: relative;
@@ -132,13 +139,12 @@ label {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	padding: 15px;
+	padding: 35px 15px 15px;
 	background-color: rgb(256, 256, 256);
 }
 
 .language-blurb {
 	padding: 5px; 
-	background-color: rgb(230, 235, 240);
 	width: 400px;
 	height: auto;
 	margin: 15px 0;
@@ -174,13 +180,12 @@ label {
 .text-background {
 	display: inline-block;
 	padding: 10px;
-	background-color: rgba(30, 30, 30, .7);
-	border-radius: 20px;
 }
 
 .carousel-inner {
-	border-radius: 55px;
 	overflow: hidden;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;  
 }
 
 @media screen and (max-width: 960px) {
@@ -226,9 +231,13 @@ label {
 		margin-left: -23%;
 	}
 
+	.animation1 {
+		font-size: 22px;
+	}
+
 	.language-blurb-container {
-		position: relative;
-		top: 20px;
+		position: relative;	
+		padding-top: 40px;
 	}
 
 	.language-blurb {
@@ -237,6 +246,6 @@ label {
 
 	#projects {
 		position: relative;
-		top: 20px;
+		top: 10px;
 	}
 }

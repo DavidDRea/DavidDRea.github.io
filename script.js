@@ -65,16 +65,6 @@ const flickerAnimation = () => {
 	setTimeout(flickerAnimation, flickerSpeed);
 }
 
-// //Scroll banner colour change function
-// const changeNavColours = () => {
-// 	let bgColourEle = document.querySelector(".nav-container");
-// 	if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-// 		bgColourEle.classList.add("change-bg-colour");
-// 	} else {
-// 	bgColourEle.classList.remove("change-bg-colour");
-// 	}
-// }
-
 window.addEventListener("load", typing(text));
 window.addEventListener("load", flickerAnimation());
 window.onscroll = () => changeNavColours();
