@@ -55,18 +55,7 @@ const deleting = () => {
 	}
 }
 
-//Randomize flicker function
-const random = () => Math.floor(Math.random() * (180 - 80 + 1)) + 80;
-
-//Screen flicker function
-const flickerAnimation = () => {
-	flicker.classList.toggle("glow-off");
-	flickerSpeed = random();
-	setTimeout(flickerAnimation, flickerSpeed);
-}
-
 window.addEventListener("load", typing(text));
-window.addEventListener("load", flickerAnimation());
 window.onscroll = () => changeNavColours();
 projectsButton.onclick = () => scrollToElement(projects);
 homeButton.onclick = () => scrollToElement(home);

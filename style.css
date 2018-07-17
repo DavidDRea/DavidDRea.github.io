@@ -14,6 +14,7 @@ html {
 }
 
 body {
+	font-family: 'Cormorant', serif;
 	min-height: 100%;
 	margin: 0;
 	display: flex;
@@ -39,9 +40,9 @@ nav.navbar {
 	position: fixed;
 	top: 0;
 	z-index: 3;
-	padding-bottom: 6px;
+	padding-bottom: 2px;
 	background-color: rgb(256, 256, 256);
-	border-bottom: 2px solid rgb(34, 52, 86);
+	border-bottom: 1px solid rgba(34, 52, 86, 0.5);
 }
 
 input#menu-button {
@@ -51,24 +52,21 @@ input#menu-button {
 label {
 	display: none;
 	font-size: 20px;
-	letter-spacing: .9vw; 
-	font-weight: 900;
+	letter-spacing: .2vw; 
+	font-weight: 600;
 	color: rgb(34, 52, 86);
 }
 
 .nav-container li {
 	display: inline-block;
-	padding: 1vw 1vw .5vw;
+	margin: 5px;
 }
 
 .nav-container button {
 	font-size: 1.4vw;
-	letter-spacing: .9vw; 
-	font-weight: 900;
-	color: rgb(34, 52, 86);
+	letter-spacing: .2vw;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
-	padding-right: 5px;
-	border-radius: 15px;
 }
 
 .nav-container button:focus {
@@ -76,8 +74,7 @@ label {
 } 
 
 .nav-container button:hover {
-	color: rgb(256, 256, 256);
-	background-color: rgb(34, 52, 86);
+	font-weight: 700;
 }
 
 .bg-img {
@@ -91,26 +88,13 @@ label {
 	max-height: 100%;
 }
 
-.glow {
-	position: absolute;
-	height: 75%;
-	width: 61%;
-	bottom: 14%;
-	left: 19%;
-	z-index: 1;
-}
-
-.glow-off {
-	background: radial-gradient(rgba(180, 204, 207, .3), transparent 60%);
-}
-
 .typewriter {
 	background-color: rgb(27, 43, 52);
 	position: absolute;
-	height: 66%;
-	width: 71.4%;
-	bottom: 18.2%;
-	left: 14%;
+	height: 48.5%;
+    width: 42.4%;
+    bottom: 28%;
+    left: 28%;
 	z-index: 2;
 }
 
@@ -148,7 +132,6 @@ label {
 	width: 400px;
 	height: auto;
 	margin: 15px 0;
-	border-radius: 25px;
 }
 
 .icon-size {
@@ -184,8 +167,7 @@ label {
 
 .carousel-inner {
 	overflow: hidden;
-	border-bottom-left-radius: 30px;
-	border-top-right-radius: 30px;  
+	border: 1px solid rgba(34, 52, 86, 0.5);
 }
 
 @media screen and (max-width: 960px) {
