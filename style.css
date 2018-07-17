@@ -171,8 +171,17 @@ label {
 }
 
 @media screen and (max-width: 960px) {
+	html, body {
+	    width: 100%;
+	    min-height: 100vh;
+	    height: auto;
+	}
+
+	html {
+		overflow-x: hidden;
+	}
+
 	.nav-container {
-		position: absolute;
 		background-color: rgb(256, 256, 256);
 		border-color: rgb(230, 235, 240);
 		color: rgba(87, 103, 119, .6);
@@ -209,8 +218,8 @@ label {
 
 	.bg-img {
 		width: 150%;
-		height: auto;
 		margin-left: -23%;
+		margin-right: -23%;
 	}
 
 	.animation1 {
