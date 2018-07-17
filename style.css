@@ -18,7 +18,7 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(230, 235, 240);
+	background-color: rgb(256, 256, 256);
 }
 
 h1, h2, p {
@@ -38,8 +38,9 @@ nav.navbar {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	z-index: 2;
+	z-index: 3;
 	padding-bottom: 6px;
+	background-color: rgb(256, 256, 256);
 	border-bottom: 2px solid rgb(34, 52, 86);
 }
 
@@ -49,7 +50,7 @@ input#menu-button {
 
 label {
 	display: none;
-	font-size: 2vw;
+	font-size: 20px;
 	letter-spacing: .9vw; 
 	font-weight: 900;
 	color: rgb(34, 52, 86);
@@ -61,7 +62,7 @@ label {
 }
 
 .nav-container button {
-	font-size: 2vw;
+	font-size: 1.4vw;
 	letter-spacing: .9vw; 
 	font-weight: 900;
 	color: rgb(34, 52, 86);
@@ -83,34 +84,48 @@ label {
 	max-height: 100%;
 }
 
-.typewriter {
-	background-color: rgb(34, 52, 86);
+.glow {
 	position: absolute;
-	height: 32%;
-	width: 25%;
-	bottom: 30%;
-	left: 38%;
+	height: 75%;
+	width: 61%;
+	bottom: 14%;
+	left: 19%;
+	z-index: 1;
 }
 
-.animation1, 
-.animation2 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 4vw;
-	text-align: center;
-	color: rgb(197, 182, 114);
+.glow-off {
+	background: radial-gradient(rgba(180, 204, 207, .3), transparent 60%);
+}
+
+.typewriter {
+	background-color: rgb(27, 43, 52);
+	position: absolute;
+	height: 66%;
+	width: 71.4%;
+	bottom: 18.2%;
+	left: 14%;
+	z-index: 2;
+}
+
+.animation1 {
+	font-family: "Consolas", sans-serif;
+	font-size: 2vw;
+	white-space: pre;
+	color: rgb(256, 256, 256);
+}
+
+.red {
+	color: rgb(96, 179, 179);
+}
+
+.blue {
+	color: rgb(234, 96, 107);
 }
 
 .projects-container {
 	width: 100%;
 	padding: 30px;
-	background-color: rgb(230, 235, 240);
-}
-
-.change-bg-colour {
-	background-color: rgb(230, 235, 240);
-	border-color: rgb(230, 235, 240);
-	color: rgba(87, 103, 119, .6);
-	box-shadow: 1px 2px 1px 1px;
+	background-color: rgb(256, 256, 256);
 }
 
 .language-blurb-container {
@@ -118,12 +133,12 @@ label {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 15px;
-	background-color: rgb(230, 235, 240);
+	background-color: rgb(256, 256, 256);
 }
 
 .language-blurb {
 	padding: 5px; 
-	background-color: rgb(256, 256, 256);
+	background-color: rgb(230, 235, 240);
 	width: 400px;
 	height: auto;
 	margin: 15px 0;
@@ -163,20 +178,23 @@ label {
 	border-radius: 20px;
 }
 
-#projects {
-	padding: 10px;
-	background-color: rgb(256, 256, 256);
-	margin-bottom: 20px;
+.carousel-inner {
+	border-radius: 55px;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 960px) {
 	.nav-container {
 		position: absolute;
-		background-color: rgb(230, 235, 240);
+		background-color: rgb(256, 256, 256);
 		border-color: rgb(230, 235, 240);
 		color: rgba(87, 103, 119, .6);
 		box-shadow: 1px 2px 1px 1px;
 		text-align: center;
+	}
+
+	.nav-container button {
+		font-size: 20px;
 	}
 
 	.justify-content-center {
@@ -202,9 +220,15 @@ label {
 		text-align: center;
 	}
 
+	.bg-img {
+		width: 150%;
+		height: auto;
+		margin-left: -23%;
+	}
+
 	.language-blurb-container {
 		position: relative;
-		top: 60px;
+		top: 20px;
 	}
 
 	.language-blurb {
@@ -213,6 +237,6 @@ label {
 
 	#projects {
 		position: relative;
-		top: 130px;
+		top: 20px;
 	}
 }
