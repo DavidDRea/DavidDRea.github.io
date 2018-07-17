@@ -89,7 +89,7 @@ label {
 }
 
 .typewriter {
-	background-color: rgb(27, 43, 52);
+	background-color: transparent;
 	position: absolute;
 	height: 48.5%;
     width: 42.4%;
@@ -135,7 +135,7 @@ label {
 }
 
 .icon-size {
-	font-size: 7vw;
+	font-size: 6em;
 	float: left;
 }
 
@@ -177,10 +177,6 @@ label {
 	    height: auto;
 	}
 
-	html {
-		overflow-x: hidden;
-	}
-
 	.nav-container {
 		background-color: rgb(256, 256, 256);
 		border-color: rgb(230, 235, 240);
@@ -216,10 +212,14 @@ label {
 		text-align: center;
 	}
 
-	.bg-img {
-		width: 150%;
-		margin-left: -23%;
-		margin-right: -23%;
+	.bg-img img {
+		content:url("images/background2.jpeg");
+		margin-top: 50px;
+	}
+
+	.typewriter {
+		bottom: 32%;
+		left: 22%;
 	}
 
 	.animation1 {
