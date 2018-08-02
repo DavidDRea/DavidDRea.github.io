@@ -164,12 +164,18 @@ label {
 }
 
 #contact {
-		position: relative;
-		text-align: center;
-		bottom: 0;
-		border-top: 1px solid rgba(34, 52, 86, 0.5);
-		height: 120px;
-		width: 100%;
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	border-top: 1px solid rgba(34, 52, 86, 0.5);
+	height: 120px;
+	width: 100%;
+}
+
+.contact-icon {
+	height: 40px;
+	width: 40px;
+	margin: 0 10px;
 }
 
 @media screen and (max-width: 960px) {
