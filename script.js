@@ -56,7 +56,6 @@ const deleting = () => {
 }
 
 window.addEventListener("load", typing(text));
-window.onscroll = () => changeNavColours();
 projectsButton.onclick = () => scrollToElement(projects);
 homeButton.onclick = () => scrollToElement(home);
 aboutButton.onclick = () => scrollToElement(about);

@@ -4,13 +4,14 @@
 	<title>David Rea</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant|Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 	<!-- Navbar -->
+
 	<div class="nav-container">
 		<input type="checkbox" id="menu-button">
         <label for="menu-button">Menu</label>
@@ -19,10 +20,10 @@
 			    <button type="button" class="nav-link" id="home-button">Home</button>
 			</li>
 			<li class="nav-item">
-				<button type="button" class="nav-link" id="projects-button">Projects</button>
+			    <button type="button" class="nav-link" id="about-button">About</button>
 			</li>
 			<li class="nav-item">
-			    <button type="button" class="nav-link" id="about-button">About</button>
+				<button type="button" class="nav-link" id="projects-button">Projects</button>
 			</li>
 			<li class="nav-item">
 			    <button type="button" class="nav-link" id="contact-button">Contact</button>
@@ -39,30 +40,27 @@
 		</div>
 	</div>
 	
+	<!-- About Me -->
+
+	<div class="about-container" id="about">
+			<hr>
+			<h2>About Me</h2>
+			<em><p>Hi, I am David Rea. I am an aspiring frontend web developer.</p>
+			<p>I am in the 3rd year of an IT degree with the Open University, and a serial studyer of web development with courses on Team Treehouse and Udemy</p></em>
+		</div>
 
 	<!-- Language Blurbs -->
+
 	<div class="language-blurb-container">
-		<div class="card language-blurb">
-			<div class="card-body">
-				<i class="devicon-html5-plain-wordmark icon-size"></i>
-				<p class="card-text">HTML5: the structural building block of the web. I am proficient in HTML5 and enjoy building solid, semantic pages, accessible to all.</p>
-			</div>
-		</div>
-		<div class="card language-blurb">
-			<div class="card-body">
-				<i class="devicon-css3-plain-wordmark icon-size"></i>
-				<p class="card-text">HTML5 is great, but without CSS3 the web would be a dull place. Creating  beautiful, responsive sites is where the fun really starts for me.</p>
-			</div>
-		</div>
-		<div class="card language-blurb">
-			<div class="card-body">
+				<i class="devicon-html5-plain icon-size"></i>
+				<i class="devicon-css3-plain icon-size"></i>
+				<i class="devicon-bootstrap-plain icon-size"></i>
 				<i class="devicon-javascript-plain icon-size"></i>
-				<p class="card-text">JavaScript is by far the most exciting part for me, and the language I enjoy working with the most. With JavaScript anything is possible.</p>
-			</div>
-		</div>
+				<i class="devicon-react-original icon-size"></i>
 	</div>
 
 	<!-- Projects carousel -->
+
 	<div class="projects-container container" id="projects">
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		    <div class="carousel-inner">
@@ -91,10 +89,6 @@
 		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    	<span class="sr-only">Next</span>
 		  	</a>
-		</div>
-
-		<div class="about-container" id="about">
-			
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
