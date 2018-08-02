@@ -19,7 +19,7 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(to right, rgb(255, 255, 255), rgb(242, 252, 255));
+	background: linear-gradient(to right, rgb(255, 255, 255), rgb(247, 254, 255));
 }
 
 h1, h2, p {
@@ -42,7 +42,7 @@ nav.navbar {
 	z-index: 3;
 	padding-bottom: 2px;
 	border-bottom: 1px solid rgba(34, 52, 86, 0.5);
-	background: linear-gradient(to right, rgb(242, 252, 255), rgb(255, 255, 255));
+	background: linear-gradient(to right, rgb(247, 254, 255), rgb(255, 255, 255));
 
 }
 
@@ -112,9 +112,18 @@ label {
 }
 
 .about-container hr {
-	height: 40px;
+	height: 20px;
 	width: 60%;
 	margin: auto;
+}
+
+.about-container h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.about-container p {
+	font-style: italic; 
 }
 
 .projects-container {
@@ -125,12 +134,12 @@ label {
 .language-blurb-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	padding: 35px 15px 15px;
+	justify-content: center;
 }
 
 .icon-size {
 	font-size: 3em;
+	padding: 20px;
 }
 
 .icon-size:hover {
@@ -151,8 +160,16 @@ label {
 }
 
 .carousel-inner {
-	/*overflow: hidden;*/
 	border: 1px solid rgba(34, 52, 86, 0.5);
+}
+
+#contact {
+		position: relative;
+		text-align: center;
+		bottom: 0;
+		border-top: 1px solid rgba(34, 52, 86, 0.5);
+		height: 120px;
+		width: 100%;
 }
 
 @media screen and (max-width: 960px) {
