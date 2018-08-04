@@ -39,21 +39,8 @@ const typing = (text) => {
 	if(timer < text.length) {
 		document.querySelector(".animation1").textContent += text.charAt(timer);
 		timer++;
-		setTimeout(function() {typing(text);}, 60);
-	} else {
-		setTimeout(deleting, 1000);
-	}
-}
-
-const deleting = () => {
-	if(timer >= 0) {
-		text2 = document.querySelector(".animation1").textContent; 
-		document.querySelector(".animation1").textContent = text2.substr(0, timer);
-		timer--;
-		setTimeout(deleting, 50);
-	} else {
-		setTimeout(function() {typing(text);}, 2000);
-	}
+		setTimeout(function() {typing(text);}, 50);
+ 		}
 }
 
 window.addEventListener("load", typing(text));
