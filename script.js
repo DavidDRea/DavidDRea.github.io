@@ -3,7 +3,7 @@ let timer = 0;
 const text = `
  <html>
     <head>
-	 <title></title>
+	 <title>For Hire</title>
     </head>
     <body>
          <h1>David Rea</h1>
